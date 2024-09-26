@@ -5,7 +5,7 @@ import { getLocalStorage, loadHeaderFooter } from './utils.mjs';
 loadHeaderFooter();
 
 
-const token = getLocalStorage("so-token")
+const token = getLocalStorage('so-token')
 isTokenValid(token);
 console.log(token);
 

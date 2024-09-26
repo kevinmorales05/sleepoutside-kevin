@@ -17,7 +17,7 @@ function productCardTemplate(product) {
     100 - ((product.FinalPrice * 100) / product.SuggestedRetailPrice).toFixed(0);
   return `
     <li class="product-card">
-      <a href="/product_pages/index.html?product=${product.Id}">
+      <a href="./product_pages/index.html?product=${product.Id}">
         <img class="product__image"
           src="${product.Images.PrimaryMedium}"
           alt="Image of ${product.Name}"

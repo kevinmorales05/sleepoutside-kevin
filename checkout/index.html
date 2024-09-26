@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Checkout</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/checkout.js" type="module"></script>
+    
+  </head>
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider checkout">
+      <h2>Review & Place your Order</h2>
+      <section class="checkout-form">
+        <form name="checkout">
+          <fieldset>
+            <legend>Shipping</legend>
+            <div class="checkout__name">
+              <label for="fname">First Name</label>
+              <input name="fname" required />
+              <label for="lname">Last Name</label>
+              <input name="lname" required />
+            </div>
+            <div class="checkout__address">
+              <label for="street">Street</label>
+              <input name="street" required />
+              <label for="city">City</label>
+              <input name="city" required />
+              <label for="state">State</label>
+              <input name="state" required />
+              <label for="zip">Zip</label>
+              <input name="zip" id="zip" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <label for="cardNumber">Card number</label>
+            <input name="cardNumber" required />
+            <label for="expiration">Expiration</label>
+            <input name="expiration" required />
+            <label for="code">Security Code</label>
+            <input name="code" required />
+          </fieldset>
+          <fieldset>
+            <legend>Orden Summary</legend>
+            <div class="order-summary"></div>
+          </fieldset>
+
+          <button type="submit" class="checkout-orden">Checkout</button>
+        </form>
+      </section>
+    </main>
+    <footer id="main-footer"></footer>
+
+  </body>
+</html>
